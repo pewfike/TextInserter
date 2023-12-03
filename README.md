@@ -1,18 +1,33 @@
-# TextInserter v1.0
-Is a small project which helps me during my Customer Support job so I can semi-automize the ticketing system using keyboard inputs. 
+# TextInserter 
+A Python script for automating text insertion using keyboard shortcuts. This script is particularly useful for streamlining responses in a chat or handling various ticket notifications with predefined templates.
 
-# TextFileInserter v1.1
-- Creating templates using file reading.
-- More and more texts.
+# Features
+Assigns predefined text templates to specific keyboard shortcuts.
+Facilitates quick and consistent responses in chat or ticketing systems.
+Supports both ticket notifications and chat macros.
 
-# TextFileInserter v1.1.1
-- This mini update is focused on more chat templates , not tickets/notification with the usage of multiple macros.
-- Added visual representation in the App with each macro, a quality of life improvement:
-  ![image](https://github.com/pewfike/TextInserter/assets/140770490/ddf57d33-c2bc-495a-93a0-6a21dbb66703)
+Installation
+Clone the repository:
 
+bash
+Copy code
+git clone https://github.com/pewfike/TextInserter.git
+Install required dependencies:
 
-# TextFileInserter v1.1.2
-- Updated the file paths so the app can be used by every one.
+bash
+Copy code
+pip install keyboard
 
-# Coming soon... v2.0
-- UI that can be used with various buttons and templates.
+Usage
+Run the main.py script:
+
+bash
+Copy code
+python TextFileInserter.py
+
+Right click TextFileInserter.py and run it with Python program.
+
+Follow the on-screen instructions for assigned keyboard shortcuts.
+
+Thanks a lot!
+Also for any suggestions or messages don't hesitate to contact me at eusuntalex92@gmail.com
