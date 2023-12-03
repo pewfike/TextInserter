@@ -6,7 +6,7 @@ Assigns predefined text templates to specific keyboard shortcuts.
 Facilitates quick and consistent responses in chat or ticketing systems.
 Supports both ticket notifications and chat macros.
 
-Installation
+### Installation
 
 ## Clone the repository:
 
