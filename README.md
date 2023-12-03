@@ -7,27 +7,30 @@ Facilitates quick and consistent responses in chat or ticketing systems.
 Supports both ticket notifications and chat macros.
 
 Installation
-Clone the repository:
 
-bash
-Copy code
+## Clone the repository:
+
+### Copy code
+```
 git clone https://github.com/pewfike/TextInserter.git
+```
+
 Install required dependencies:
 
-bash
-Copy code
+### Copy code
+```
 pip install keyboard
+```
 
-Usage
-Run the main.py script:
-
-bash
-Copy code
+## Run the .py script:
+### Copy code
+```
 python TextFileInserter.py
+```
 
 Right click TextFileInserter.py and run it with Python program.
 
 Follow the on-screen instructions for assigned keyboard shortcuts.
 
-Thanks a lot!
-Also for any suggestions or messages don't hesitate to contact me at eusuntalex92@gmail.com
+### Thanks a lot!
+## Also for any suggestions or messages don't hesitate to contact me at eusuntalex92@gmail.com
