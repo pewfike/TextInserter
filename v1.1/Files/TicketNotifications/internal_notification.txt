@@ -1,0 +1,14 @@
+[INTERNAL] Downtime - X Studio, Table(s)/Entire Studio on X, Month/Day, Year from XX:XX UTC to/- XX:XX/Ongoing
+
+Hello!
+
+Please be informed of the following/ongoing Downtime:
+
+Tables: Table names
+Date: dd.mm.yyyy
+Start time UTC: XX:XX
+End time UTC: XX:XX
+Total time: X minutes
+Reason: -
+Resolution: Resolved (Only if it's solved)
+

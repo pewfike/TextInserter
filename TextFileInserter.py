@@ -7,14 +7,12 @@ exit_flag = False
 
 print("Tickets + Notifications macros:\n")
 print("If CTRL + 1 = Notification for NJ studio")
-print("If CTRL + 2 = Incorrectly Finished Round ticket format")
-print("If CTRL + 4 = Base ticket format")
-print("If CTRL + 5 = Base ticket format")
-print("If CTRL + 6 = Base ticket format")
-print("If CTRL + 7 = Base ticket format")
-print("If CTRL + 8 = Base ticket format")
-print("If CTRL + 9 = Base ticket format")
-print("If CTRL + 0 = Base ticket format\n")
+print("If CTRL + 2 = Internal notification template")
+print("If CTRL + 3 = Base ticket")
+print("If CTRL + 4 = Ultimate Roulette template")
+print("If CTRL + 5 = Mail validation for Slack")
+print("If CTRL + 6 = General Error ticket")
+print("If CTRL + 7 = Incorrectly finished ticket\n")
 print("Chat Macros:\n")
 print("If ALT + 1 = Hello, thank you for contacting support, how can I assist you today?")
 print("If ALT + 2 = Hello, thank you for contacting support, how can I assist you today? Dear player, for a better assistance regarding any issues please use a translator for English. Thank you for understanding.")
@@ -51,9 +49,12 @@ def on_key_event(file_paths):
 def main():
     file_paths = {
         'CTRL+1': 'v1.1/Files/TicketNotifications/Nj_notification.txt',
-        'CTRL+2': 'v1.1/Files/TicketNotifications/inc_finished.txt',
+        'CTRL+2': 'v1.1/Files/TicketNotifications/internal_notification.txt',
         'CTRL+3': 'v1.1/Files/TicketNotifications/base_ticket.txt',
-        'CTRL+4': 'v1.1/Files/TicketNotifications/Nj_notification.txt',
+        'CTRL+4': 'v1.1/Files/TicketNotifications/ultimate_roulette.txt',
+        'CTRL+5': 'v1.1/Files/TicketNotifications/mail_validation.txt',
+        'CTRL+6': 'v1.1/Files/TicketNotifications/general_error.txt',
+        'CTRL+7': 'v1.1/Files/TicketNotifications/inc_finished.txt',
         'ALT+1': 'v1.1/Files/ChatTemplates/chat_1.txt',
         'ALT+2': 'v1.1/Files/ChatTemplates/chat_2.txt',
         'ALT+3': 'v1.1/Files/ChatTemplates/chat_3.txt',

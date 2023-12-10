@@ -1,0 +1,5 @@
+Hello @KAM!
+Could you please validate name@email.com as being part of Group / Operator / Operator ID?
+Ticket related: Zendesk ticket number with link
+Thanks!
+@ezugi_gcs
