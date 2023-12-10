@@ -5,6 +5,7 @@ A Python script for automating text insertion using keyboard shortcuts. This scr
 Assigns predefined text templates to specific keyboard shortcuts.
 Facilitates quick and consistent responses in chat or ticketing systems.
 Supports both ticket notifications and chat macros.
+A strong key about this app, is that it can be used on different platforms (e.g. Outlook, Gmail, Slack, Zendesk, WEtc)
 
 ### Installation
 
