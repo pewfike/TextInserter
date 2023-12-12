@@ -15,9 +15,9 @@ print("If CTRL + 6 = General Error ticket")
 print("If CTRL + 7 = Incorrectly finished ticket\n")
 print("Chat Macros:\n")
 print("If ALT + 1 = Hello, thank you for contacting support, how can I assist you today?")
-print("If ALT + 2 = Hello, thank you for contacting support, how can I assist you today? Dear player, for a better assistance regarding any issues please use a translator for English. Thank you for understanding.")
+print("If ALT + 2 = Hello, thank you for contacting support, how can I assist you today? Dear player, for better assistance regarding any issues, please use a translator for English. Thank you for understanding.")
 print("If ALT + 3 = Hello, thank you for contacting support, dear player can you please provide more details regarding your request, Game ID, Table, Dealer name. ")
-print("If ALT + 6 = Dear player, unfortunately these issues cannot be solved on our end. Please contact your operator for further assistance.  We apologize for any inconvenience this situation may have created.")
+print("If ALT + 6 = Dear player, unfortunately, these issues cannot be solved on our end. Please contact your operator for further assistance.  We apologize for any inconvenience this situation may have created.")
 print("If ALT + 7 = Dear player, this type of behavior is not acceptable in the chat room and if this behavior persists, we will be forced to disable your chat system. Thank you for understanding.")
 print("If ALT + 8 = Dear player, your chat system was temporarily disabled. If this behavior persists, we will be forced to disable your chat system permanently.")
 print("If ALT + 9 = Dear player, your chat system was permanently disabled due bad behavior.")
@@ -33,8 +33,11 @@ def read_text_from_file(file_path):
         return ""
 
 def insert_text(text):
-    keyboard.write(text)
-    time.sleep(0.2)
+    lines = text.split('\n')
+    for i, line in enumerate(lines):
+        keyboard.write(line.strip())
+        keyboard.press_and_release('ctrl+enter')  # Use 'enter' instead of 'alt+enter'
+        
 
 def on_key_event(file_paths):
     global exit_flag
