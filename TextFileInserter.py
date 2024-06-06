@@ -32,29 +32,34 @@ def on_key_event(file_paths):
                 insert_text(read_text_from_file(abs_path))
         time.sleep(0.1)
 
-def trigger_macro(file_path, text_box):
-    abs_path = os.path.join(os.path.dirname(__file__), file_path)
+def update_text_box(selection, file_paths, text_box):
+    abs_path = os.path.join(os.path.dirname(__file__), file_paths[selection.get()])
     text = read_text_from_file(abs_path)
     text_box.delete(1.0, tk.END)
     text_box.insert(tk.END, text)
 
 def create_ui(file_paths):
     root = tk.Tk()
-    root.title("Chat Macros & Slack")
+    root.title("Text Inserter")
 
     text_box = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=60, height=20)
     text_box.pack(pady=10)
 
-    for hotkey, rel_path in file_paths.items():
-        # Customizing the button text here
-        button_text = f"{hotkey}"  # Customize this text as needed
-        button = tk.Button(root, text=button_text, command=lambda rp=rel_path: trigger_macro(rp, text_box))
-        button.pack(pady=5)
+    # Create dropdown list for buttons
+    selected_option = tk.StringVar()
+    dropdown = tk.OptionMenu(root, selected_option, *file_paths.keys(), command=lambda _: update_text_box(selected_option, file_paths, text_box))
+    dropdown.config(font=("Arial", 10))  # Customize font
+    dropdown.pack(pady=10)
+
+    # Watermark label
+    watermark_label = tk.Label(root, text="Made by @Dobrin Mihai-Alexandru", fg="gray", font=("Arial", 10, "italic"))
+    watermark_label.pack(side=tk.BOTTOM, pady=10)
 
     exit_button = tk.Button(root, text="Exit", command=root.quit)
     exit_button.pack(pady=20)
 
     root.mainloop()
+
 
 def main():
     file_paths = {
