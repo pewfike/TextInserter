@@ -1,0 +1,17 @@
+Important: Ezugi Downtime Notification - NJ Studio, Table on Day, D/M, Y from XX:XX to XX:XX
+
+Dear Partner(s),
+
+We would like to inform you that the following table has been undergoing an unplanned maintenance.
+
+The maintenance has been completed and the table below is open for customers and operating without any issues:
+
+Date: (NJ date - data from NJ BO) (american format)
+Start time: (NJ time - data from NJ BO)
+End time: (NJ time - data from NJ BO)
+Total time: minutes
+Table(s):
+Reason:
+Table location: New Jersey
+
+We apologize for the inconvenience and thank you for your understanding!
