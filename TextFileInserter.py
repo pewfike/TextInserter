@@ -4,6 +4,7 @@ import threading
 import os
 import tkinter as tk
 from tkinter import messagebox, scrolledtext
+import pyperclip
 
 exit_flag = False
 
@@ -32,11 +33,26 @@ def on_key_event(file_paths):
                 insert_text(read_text_from_file(abs_path))
         time.sleep(0.1)
 
-def update_text_box(selection, file_paths, text_box):
-    abs_path = os.path.join(os.path.dirname(__file__), file_paths[selection.get()])
+def update_text_box(selection, file_paths, text_box, notification_title_box=None):
+    selected_file = selection.get()
+    abs_path = os.path.join(os.path.dirname(__file__), file_paths[selected_file])
     text = read_text_from_file(abs_path)
+    
+    if notification_title_box:
+        if "notification" in selected_file.lower():
+            lines = text.split('\n')
+            notification_title_box.delete(1.0, tk.END)
+            notification_title_box.insert(tk.END, lines[0])  # Display the first line (title) in the title box
+            text = '\n'.join(lines[1:])  # Exclude the title from the main text
+        else:
+            notification_title_box.delete(1.0, tk.END)  # Clear the title box
+    
     text_box.delete(1.0, tk.END)
     text_box.insert(tk.END, text)
+
+def copy_to_clipboard(text_box):
+    text = text_box.get(1.0, tk.END)
+    pyperclip.copy(text)
 
 def create_ui(file_paths):
     root = tk.Tk()
@@ -47,9 +63,23 @@ def create_ui(file_paths):
 
     # Create dropdown list for buttons
     selected_option = tk.StringVar()
-    dropdown = tk.OptionMenu(root, selected_option, *file_paths.keys(), command=lambda _: update_text_box(selected_option, file_paths, text_box))
+    dropdown = tk.OptionMenu(root, selected_option, *file_paths.keys(), command=lambda _: update_text_box(selected_option, file_paths, text_box, notification_title_box))
     dropdown.config(font=("Arial", 10))  # Customize font
     dropdown.pack(pady=10)
+
+    # Create title box for notification files
+    notification_files = [key for key in file_paths.keys() if "notification" in key.lower()]
+    if notification_files:
+        notification_frame = tk.Frame(root)
+        notification_frame.pack(pady=10)
+        notification_title_label = tk.Label(notification_frame, text="Notification Title:")
+        notification_title_label.pack(side=tk.LEFT)
+        notification_title_box = tk.Text(notification_frame, wrap=tk.WORD, width=30, height=1)
+        notification_title_box.pack(side=tk.LEFT)
+
+    # Copy to clipboard button
+    copy_button = tk.Button(root, text="Copy to Clipboard", command=lambda: copy_to_clipboard(text_box))
+    copy_button.pack(pady=10)
 
     # Watermark label
     watermark_label = tk.Label(root, text="Made by @Dobrin Mihai-Alexandru", fg="gray", font=("Arial", 10, "italic"))
