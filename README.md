@@ -8,7 +8,7 @@ Supports both ticket notifications and chat macros.
 A strong key about this app, is that it can be used on different platforms (e.g. Outlook, Gmail, Slack, Zendesk, WEtc)
 
 # New update:
-The app, now has a UI in order to simplify the macro-tool over all the environments:
+The app, now has an UI in order to simplify the macro-tool over all the environments:
 
 ![image](https://github.com/pewfike/TextInserter/assets/140770490/08684074-a632-42ed-b35b-5be0ee105733)
 ![image](https://github.com/pewfike/TextInserter/assets/140770490/f26d7592-9685-469f-9100-a0f6efb7f919)
