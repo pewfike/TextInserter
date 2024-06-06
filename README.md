@@ -15,13 +15,7 @@ A strong key about this app, is that it can be used on different platforms (e.g.
 ```
 git clone https://github.com/pewfike/TextInserter.git
 ```
-
-Install required dependencies:
-
-### Copy code
-```
-pip install keyboard
-```
+## Install Python via: https://www.python.org/downloads/
 
 ## Run the .py script:
 ### Copy code
