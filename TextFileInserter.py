@@ -58,21 +58,21 @@ def create_ui(file_paths):
 
 def main():
     file_paths = {
-        'NJ Notification': 'v1.1/Files/TicketNotifications/Nj_notification.txt',
-        'Internal Notification': 'v1.1/Files/TicketNotifications/internal_notification.txt',
-        'Base ticket': 'v1.1/Files/TicketNotifications/base_ticket.txt',
-        'Ultimate Roulette Template': 'v1.1/Files/TicketNotifications/ultimate_roulette.txt',
-        'Mail Validation': 'v1.1/Files/TicketNotifications/mail_validation.txt',
-        'General Error Template': 'v1.1/Files/TicketNotifications/general_error.txt',
-        'Incorrectly Finished Template': 'v1.1/Files/TicketNotifications/inc_finished.txt',
-        'Chat 1': 'v1.1/Files/ChatTemplates/chat_1.txt',
-        'Chat 2': 'v1.1/Files/ChatTemplates/chat_2.txt',
-        'Chat 3': 'v1.1/Files/ChatTemplates/chat_3.txt',
-        'Chat 4': 'v1.1/Files/ChatTemplates/chat_4.txt',
-        'Chat 5': 'v1.1/Files/ChatTemplates/chat_5.txt',
-        'Chat 6': 'v1.1/Files/ChatTemplates/chat_6.txt',
-        'Chat 7': 'v1.1/Files/ChatTemplates/chat_7.txt',
-        'Chat 8': 'v1.1/Files/ChatTemplates/chat_8.txt',
+        'NJ Notification': 'v1.2/Files/TicketNotifications/Nj_notification.txt',
+        'Internal Notification': 'v1.2/Files/TicketNotifications/internal_notification.txt',
+        'Base ticket': 'v1.2/Files/TicketNotifications/base_ticket.txt',
+        'Ultimate Roulette Template': 'v1.2/Files/TicketNotifications/ultimate_roulette.txt',
+        'Mail Validation': 'v1.2/Files/TicketNotifications/mail_validation.txt',
+        'General Error Template': 'v1.2/Files/TicketNotifications/general_error.txt',
+        'Incorrectly Finished Template': 'v1.2/Files/TicketNotifications/inc_finished.txt',
+        'Chat 1': 'v1.2/Files/ChatTemplates/chat_1.txt',
+        'Chat 2': 'v1.2/Files/ChatTemplates/chat_2.txt',
+        'Chat 3': 'v1.2/Files/ChatTemplates/chat_3.txt',
+        'Chat 4': 'v1.2/Files/ChatTemplates/chat_4.txt',
+        'Chat 5': 'v1.2/Files/ChatTemplates/chat_5.txt',
+        'Chat 6': 'v1.2/Files/ChatTemplates/chat_6.txt',
+        'Chat 7': 'v1.2/Files/ChatTemplates/chat_7.txt',
+        'Chat 8': 'v1.2/Files/ChatTemplates/chat_8.txt',
         # Add more hotkeys and paths as needed
     }
 
