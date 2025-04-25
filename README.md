@@ -28,7 +28,7 @@ A Windows application for managing and quickly inserting text templates into any
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/TextInserter.git
+   git clone https://github.com/pewfike/TextInserter.git
    ```
 
 2. Install required dependencies:
