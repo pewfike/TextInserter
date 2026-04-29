@@ -1,101 +1,38 @@
-# Text Inserter v2.0
+<div align="center">
 
-A Windows application for managing and quickly inserting text templates into any application. This tool is particularly useful for customer support, help desk, or any role that requires frequent use of standardized text responses.
+# 📋 Text Inserter
 
-## Features
+**A lightweight Windows desktop app for managing and instantly copying text templates to the clipboard.**
 
-- **Template Management**
-  - Create, edit, and delete text templates
-  - Organize templates into categories (Notifications and Chat)
-  - Copy templates to clipboard with one click
+![Python](https://img.shields.io/badge/Python-3.10%2B-blue?logo=python&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Latest](https://img.shields.io/badge/Latest-v3.0-orange)
 
-- **Hotkey Support**
-  - Quick access to templates using customizable hotkeys
-  - Automatically paste templates into any application
+</div>
 
-- **User-Friendly Interface**
-  - Clean and intuitive design
-  - Easy template selection and management
-  - Large text preview area
+---
 
-## Installation
+Text Inserter is a small productivity tool built for customer support agents, help desk staff, and anyone who finds themselves typing the same responses repeatedly. Pick a template, press `Ctrl+C`, paste — done.
 
-1. Download the latest release.
-2. Extract the downloaded ZIP file
-3. Run `TextFileInserter.exe`
+## 📦 Releases
 
-## Building from Source
+| Version | Highlights |
+|---|---|
+| [v3.0](../../releases/latest) ← current | Modular rewrite, live search, improved UI, standalone `.exe` |
+| v2.0 | Hotkey support, two-category template system |
+| v1.0 | Initial release |
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/pewfike/TextInserter.git
-   ```
+## 🚀 Quick Start
 
-2. Install required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+Download the latest `TextFileInserter.exe` from the [Releases](../../releases) page and run it — no installation required.
 
-3. Build the executable:
-   ```bash
-   build.bat
-   ```
+To run from source or build the executable yourself, see the [v3.0 README](releases/v3.0/README.md).
 
-4. The executable will be created in the `dist` folder
+## 👤 Author
 
-## Usage
+**Dobrin Mihai-Alexandru** — [@pewfike](https://github.com/pewfike)
 
-1. **Creating Templates**
-   - Click "New Template"
-   - Select template type (Notification or Chat)
-   - Enter template name and content
-   - Save the template
+## 📝 License
 
-2. **Using Templates**
-   - Select a template from the dropdown
-   - Click "Copy to Clipboard" or use the assigned hotkey
-   - Paste the template where needed
-
-3. **Managing Templates**
-   - Edit existing templates using the "Edit Template" button
-   - Delete templates using the "Delete Template" button
-   - All changes are saved automatically
-
-## Directory Structure
-
-```
-TextInserter/
-├── v2.0/
-│   ├── Files/
-│   │   ├── TicketNotifications/
-│   │   └── ChatTemplates/
-├── TextFileInserter.py
-├── build.bat
-└── README.md
-```
-
-## Requirements
-
-- Windows 10 or later
-- Python 3.8 or later (for building from source)
-- Required Python packages:
-  - keyboard
-  - pyperclip
-  - tkinter
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Author
-
-- **Dobrin Mihai-Alexandru**
-  - GitHub: [@Dobrin Mihai-Alexandru](https://github.com/pewfike)
-
-## Acknowledgments
-
-- Thanks to all contributors and users for their feedback and support
+MIT License — see [LICENSE](LICENSE) for details.
